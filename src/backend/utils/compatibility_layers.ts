@@ -309,7 +309,7 @@ export async function getCrossover(): Promise<Set<WineInstallation>> {
   ]
   crossoverDefaultPath.forEach((crossoverAppPath) => {
     if (existsSync(crossoverAppPath)) {
-      crossoverMacPath.add(crossoverAppPath)
+      crossoverPaths.add(crossoverAppPath)
     }
   })
 
