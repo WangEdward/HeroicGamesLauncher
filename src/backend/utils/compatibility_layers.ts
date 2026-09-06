@@ -300,7 +300,7 @@ export async function getCrossover(): Promise<Set<WineInstallation>> {
     return crossover
   }
 
-  const crossoverMacPath = new Set<string>()
+  const crossoverPaths = new Set<string>()
 
   // search for crossover installed on default path
   const crossoverDefaultPath = [
