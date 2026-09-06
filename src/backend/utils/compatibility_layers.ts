@@ -322,7 +322,7 @@ export async function getCrossover(): Promise<Set<WineInstallation>> {
     })
   })
 
-  crossoverMacPath.forEach((crossoverPath) => {
+  crossoverPaths.forEach((crossoverPath) => {
     const infoFilePath = join(crossoverPath, 'Contents/Info.plist')
     if (crossoverPath && existsSync(infoFilePath)) {
       const info = plistParse(
