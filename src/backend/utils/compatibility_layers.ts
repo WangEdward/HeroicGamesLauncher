@@ -318,7 +318,7 @@ export async function getCrossover(): Promise<Set<WineInstallation>> {
     'mdfind kMDItemCFBundleIdentifier = "com.codeweavers.CrossOver"'
   ).then(async ({ stdout }) => {
     stdout.split('\n').forEach((crossoverPath) => {
-      crossoverMacPath.add(crossoverPath)
+      crossoverPaths.add(crossoverPath)
     })
   })
 
